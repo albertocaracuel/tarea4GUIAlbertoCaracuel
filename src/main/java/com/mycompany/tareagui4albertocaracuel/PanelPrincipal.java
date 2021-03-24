@@ -92,6 +92,29 @@ public class PanelPrincipal extends JPanel implements ActionListener {
                 break;
 
         }
+        
+        switch ( lista.get(0)) {
+
+            case "+":
+                lista.remove(lista.size() - 1);
+                break;
+            case "=":
+                lista.remove(lista.size() - 1);
+                break;
+            case "C":
+                lista.remove(lista.size() - 1);
+                break;
+            case "-":
+                lista.remove(lista.size() - 1);
+                break;
+            case "/":
+                lista.remove(lista.size() - 1);
+                break;
+            case "*":
+                lista.remove(lista.size() - 1);
+                break;
+
+        }
         //recorro la lista y hago un String
         for (int i = 0; i < lista.size(); i++) {
             cadena += lista.get(i);
