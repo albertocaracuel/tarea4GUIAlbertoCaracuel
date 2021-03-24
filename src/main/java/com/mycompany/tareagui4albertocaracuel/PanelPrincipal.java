@@ -121,7 +121,7 @@ public class PanelPrincipal extends JPanel implements ActionListener {
 
         }
 
-        int resultado = Integer.parseInt(cadena);
+        String resultado = cadena;
         String numCadena = String.valueOf(resultado);
         
         PanelBotones nuevo = new PanelBotones();
