@@ -65,15 +65,10 @@ public class PanelPrincipal extends JPanel implements ActionListener {
         }
         //introduzco todos los valores de los botones a los q se ha dado en el array
         lista.add(((JButton) o).getText());
-
-        //si el ultimo valor es un igual
-        if (lista.get(lista.size() - 1) == "=") {
-            //llamada al metodo limpiar array
-            limpiarArray();
-           //llama al metodo resultado
-            resultado();
-
-        }
+        
+        //llamada metodo resultado
+        resultado();
+       
         //borrarMemoria
         borrarMemoria();
 
@@ -249,7 +244,13 @@ public class PanelPrincipal extends JPanel implements ActionListener {
     }
      //4 if en los q si la lista contiene algun operando me ejecuta su metodo especifico
     private void resultado(){
-        if (lista.contains("-")) {
+        
+         //si el ultimo valor es un igual
+        if (lista.get(lista.size() - 1) == "=") {
+            //llamada al metodo limpiar array
+            limpiarArray();
+           
+            if (lista.contains("-")) {
                 calculoResta();
             }
 
@@ -264,6 +265,9 @@ public class PanelPrincipal extends JPanel implements ActionListener {
             if (lista.contains("s")) {
                 calculoSuma();
             }
+
+        }
+        
         
     }
 }
