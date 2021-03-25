@@ -14,6 +14,7 @@ import javax.swing.JPanel;
  * @author alberto
  */
 public class PanelBotones extends JPanel {
+
     // Números del 0 al 9 y seis botones más para
     // suma, resta, multiplicacion, división, resultado y limpiar
     JButton[] grupoBotones = new JButton[16];

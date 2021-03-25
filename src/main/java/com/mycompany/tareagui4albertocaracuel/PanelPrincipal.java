@@ -70,22 +70,8 @@ public class PanelPrincipal extends JPanel implements ActionListener {
         if (lista.get(lista.size() - 1) == "=") {
             //llamada al metodo limpiar array
             limpiarArray();
-            //4 if en los q si la lista contiene algun operando me ejecuta su metodo especifico
-            if (lista.contains("-")) {
-                calculoResta();
-            }
-
-            if (lista.contains("x")) {
-                calculoMultiplicacion();
-            }
-
-            if (lista.contains("d")) {
-                calculoDivision();
-            }
-            
-            if (lista.contains("s")) {
-                calculoSuma();
-            }
+           //llama al metodo resultado
+            resultado();
 
         }
         //borrarMemoria
@@ -260,5 +246,24 @@ public class PanelPrincipal extends JPanel implements ActionListener {
         //muestro los resultados
         System.out.println(finals);
         areaTexto.setText(numCadena);
+    }
+     //4 if en los q si la lista contiene algun operando me ejecuta su metodo especifico
+    private void resultado(){
+        if (lista.contains("-")) {
+                calculoResta();
+            }
+
+            if (lista.contains("x")) {
+                calculoMultiplicacion();
+            }
+
+            if (lista.contains("d")) {
+                calculoDivision();
+            }
+            
+            if (lista.contains("s")) {
+                calculoSuma();
+            }
+        
     }
 }
