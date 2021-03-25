@@ -99,7 +99,7 @@ public class PanelPrincipal extends JPanel implements ActionListener {
         
         switch (lista.get(lista.size() - 1)) {
 
-            case "+":
+            case "s":
                 lista.remove(lista.size() - 1);
                 break;
             case "=":
@@ -111,10 +111,10 @@ public class PanelPrincipal extends JPanel implements ActionListener {
             case "-":
                 lista.remove(lista.size() - 1);
                 break;
-            case "/":
+            case "d":
                 lista.remove(lista.size() - 1);
                 break;
-            case "*":
+            case "x":
                 lista.remove(lista.size() - 1);
                 break;
 
@@ -122,7 +122,7 @@ public class PanelPrincipal extends JPanel implements ActionListener {
 
         switch (lista.get(0)) {
 
-            case "+":
+            case "s":
                 lista.remove(0);
                 break;
             case "=":
@@ -134,10 +134,10 @@ public class PanelPrincipal extends JPanel implements ActionListener {
             case "-":
                 lista.remove(0);
                 break;
-            case "/":
+            case "d":
                 lista.remove(0);
                 break;
-            case "*":
+            case "x":
                 lista.remove(0);
                 break;
 
